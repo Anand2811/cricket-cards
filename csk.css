@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+
+/* csk cards desin */
+.csk{
+background-color: yellow;
+}
+.csk .head{
+    text-align: center;
+    /* background: yellow; */
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.head h1{
+    color: #000;
+}
+.csk_container{
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: yellow;
+    justify-content: center;
+} 
+.csk_container .cards:hover{
+    transform: scale(1.1,1.1);
+}
+
+.cards{
+    width: 220px;
+    height: fit-content;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px 5px rgb(65, 68, 68);
+}
+.content{
+    color:black;
+    background: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+.content .msd{
+    color: yellow;
+}

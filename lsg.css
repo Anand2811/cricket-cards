@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* lsg cards desin */
+.lsg{
+    background:mediumblue;
+}
+.lsg .head6{
+    text-align: center;
+    /* background:mediumblue; */
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.head6 h1{
+    color: #000;
+}
+.lsg_container{
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color:mediumblue;
+    justify-content: center;
+}
+.lsg_container .cards:hover{
+    transform: scale(1.1,1.1);
+}
+.cards{
+    box-shadow: 5px 5px 5px 5px rgb(65, 68, 68);
+    width: 220px;
+    height: fit-content;
+    border-radius:20px;
+}
+.content{
+    color:black;
+    background: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+.content .klr{
+    color:mediumblue;
+}

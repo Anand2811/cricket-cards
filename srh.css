@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* srh cards desin */
+.srh{
+    background:orangered;
+}
+.srh .head9{
+    text-align: center;
+    /* background:orangered; */
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.head9 h1{
+    color: #000;
+}
+.srh_container{
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color:orangered;
+    justify-content: center;
+}
+.srh_container .cards:hover{
+    transform: scale(1.1,1.1);
+}
+.cards{
+    box-shadow: 5px 5px 5px 5px rgb(65, 68, 68);
+    width: 220px;
+    height: fit-content;
+    border-radius:20px;
+}
+.content{
+    color:black;
+    background: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+.content .am{
+    color:orangered;
+}

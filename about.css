@@ -1,0 +1,171 @@
+li{
+    list-style: none; 
+ }
+ a{
+     text-decoration: none;
+     color: dodgerblue;
+     font-size: 1.2rem;
+ }
+ a:hover{
+     color: gold;
+ } 
+
+
+/* ABOUT HEADER STYLE */
+.main_navbar1{
+    height: 100vh;
+    background-color: black;
+}
+ .head{
+    width: 100%;
+    position: fixed;
+    padding: 0 ;
+}
+.navbar1{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar1 .logo1 a{
+    font-size: 2rem;
+    font-weight: bold;      
+}
+
+.navbar1 .links1{
+    display: flex;
+    gap:2rem;
+}
+.navbar1 li a{
+    font-size: 1.5rem;
+}
+.navbar1 .toggle_btn1{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn1{
+    background-color: gold;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn1:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.action_btn1:active{
+    scale: 0.95;
+}
+/* ABOUT DROPDOWN MENU STYLE */
+.dropdown_menu1{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius:10px;
+    overflow:hidden;
+    transition:height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+.dropdown_menu1.open{
+    height: 200px;
+}
+.dropdown_menu1 li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu1 .action_btn1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ABOUT SECTION STYLE */
+#about{
+    height:calc(100vh);
+    padding-top: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+.aboutus h1{
+font-size: 2rem;
+}
+.aboutus span{
+    color: blue;
+    font-size: 2rem;
+}
+.aboutus p{
+font-size: 1rem;
+text-align: center;
+gap: 2rem;
+}
+.aboutus{
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.aboutus h2{
+    font-size: 2rem;
+    text-align: center;
+    color: blue;
+}
+.aboutus .his{
+    color: white;
+}
+.aboutus .back{
+    text-align: start;
+    font-size: 1.5rem;
+}
+.aboutus .back:hover{
+    color: blue;
+}
+.aboutus .found{
+    text-align: start;
+    font-size: 1.5rem;
+}
+.aboutus .found:hover{
+    color: blue;
+}
+
+
+
+/* ABOUT STYLE RESPONSIVE DESIGN */
+@media(max-width:992px){
+    .navbar1 .links1,
+    .navbar1 .action_btn1{
+        display: none;
+    }
+    .navbar1 .toggle_btn1{
+        display: block;
+    }
+    .dropdown_menu1{
+        display: block;
+    }
+}
+
+@media(max-width:576px){
+    .dropdown_menu1{
+        left: 2rem;
+        width: unset;
+    }
+} 
+ 

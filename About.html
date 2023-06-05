@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="main_navbar1">
+    <header class="head">
+    <div class="navbar1">
+        <div class="logo1"><a href="#">Indian Premier League</a></div>
+        <ul class="links1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./teams.html">Teams</a></li>
+        </ul>
+        <a href="./index.html" class="action_btn1">Get started</a>
+        <div class="toggle_btn1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+        <div class="dropdown_menu1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./teams.html">Teams</a></li>
+            <li><a href="./index.html" class="action_btn1">Get started</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="aboutus">
+                <h1><span>ABOUT</span> US</h1>
+            <p>The Indian Premier League (IPL)(also known as the TATA IPL for sponsorship reasons)is a men's Twenty20 (T20) cricket league that is annually held in India and contested by ten city-based franchise teams.The BCCI founded the league in 2007. The competition is usually held in summer between March and May every year. It has an exclusive window in the ICC Future Tours Programme due to fewer international cricket tours happening during IPL seasons anywhere in the world.
+
+                The IPL is the most-popular cricket league in the world;in 2014,it was ranked sixth by average attendance among all sports leagues.In 2010, the IPL became the first sporting event to be broadcast live on YouTube.The brand value of the IPL in 2022 was ₹90,038 crore(US$11 billion).According to BCCI, the 2015 IPL season contributed ₹1,150 crore(US$140 million)to the GDP of the economy of India.In December 2022, the IPL became a decacorn valued at US$10.9 billion, registering a 75% growth in dollar terms since 2020 when it was valued at $6.2 billion,according to a report by consulting firm D&P Advisory.Its 2023 final was the most streamed live event on internet with 3.2 Cr viewers.
+                
+                In 2023 the league sold its media rights for the period of 2023–2027 for $6.4 billion to Viacom18 and Star Sports,making the IPL's value per match $13.4 million.As of 2023, there have been sixteen seasons of the tournament.The present title holders are Chennai Super Kings,who won the IPL 2023 by defeating Gujarat Titans in the final at the Narendra Modi Stadium in Ahemedabad.</p>
+
+            <h2>HIST<span class="his">ORY</span></h2>
+            <h3 class="back">BACKGROUND</h3>
+                <p>The Indian Cricket League(ICL)was founded in 2007 with funding provided by Zee Entertainment Enterprises.The ICL was not recognised by the Board of Control for Cricket in India(BCCI)or the International Cricket Council(ICC),and the BCCI was not pleased with its committee members joining the ICL executive board.To prevent players from joining the ICL, the BCCI increased the prize money in its domestic tournaments and imposed lifetime bans on players joining the ICL, which the BCCI considered a rebel league.</p>
+            
+            <h3 class="found">FOUNDATION</h3>
+                <p>On 13 September 2007,following India's victory at the 2007 T20 World Cup,the BCCI announced a franchise-based Twenty20 cricket(T20)competition called Indian Premier League.The first season was due to start in April 2008 in a "high-profile ceremony"in New Delhi.BCCI vice-president Lalit Modi,who led the IPL effort,gave details of the tournament,including its format,prize money,franchise revenue system,and squad composition rules.It was also announced the IPL would be run by a seven-man governing council composed of former India players and BCCI officials and that the two top IPL teams would qualify for that year's Champions League Twenty20. Modi also said the BCCI had been working on the idea for two years and that the IPL was not started as a "knee-jerk reaction" to the ICL.The league's format was similar to that of the English Premier League and the National Basketball Association in the United States.According to Modi:"The IPL has been designed to entice an entirely new generation of sports fans into the grounds throughout the country.The dynamic Twenty20 format has been designed to attract a young fan base,including women and children."
+
+                To choose team owners for the new league,an auction of franchises was held on 24 January 2008;the reserve prices of the franchises were around $400 million.At the end of the auction,the winning bidders and the cities in which the teams would be based:Bangalore,Chennai,Delhi,Hyderabad,Jaipur,Kolkata,Mohali,and Mumbai.The franchises were sold for a total of $723.59 million.The ICL ended in 2008.
+
+                Pakistani players have not been allowed to take part in the IPL following the 2008 Mumbai terrorist attacks due to Pakistan's involvement in the attacks,which angered many Indians.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn1');
+        const toggleBtnIcon = document.querySelector('.toggle_btn1 i');
+        const dropDownMenu = document.querySelector('.dropdown_menu1');
+        
+            toggleBtn.onclick = function() {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+        
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+            </script>
+            </body>
+            </html>

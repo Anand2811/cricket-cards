@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="teams.css">
+</head>
+<body class="main_navbar2">
+    <header>
+        <div class="navbar2">
+            <div class="logo2"><a href="#">Indian Premier League</a></div>
+            <ul class="links2">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./teams.html">Teams</a></li>
+            </ul>
+            <a href="./index.html" class="action_btn2">Get started</a>
+            <div class="toggle_btn2">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+            <div class="dropdown_menu2">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./teams.html">Teams</a></li>
+                <li><a href="./index.html" class="action_btn2">Get started</a></li>
+            </div>
+        </header>
+        <div class="column2">
+        <div class="teams">
+        <h1>IPL FRANCHIES TEAM</h1>
+        <p><a class="csk" href="./csk.html">CHENNAI SUPER KINGS</a> </P>
+        <p><a class="mi" href="./mi.html">MUMBAI INDIANS</a></P>
+        <P><a class="gt" href="./gt.html">GUJARAT TITANS</a></P>
+        <P><a class="rcb" href="./rcb.html">ROYAL CHALLENGERS BANGOLRE</a></P>
+        <P><a class="mi" href="./dc.html">DELHI CAPITALS</a></P>
+        <P><a class="kkr" href="./kkr.html">KOLKATA KNIGHT RIDERS</a></P>
+        <P><a class="gt" href="./lsg.html">LUCKNOW SUPER GIANTS</a></P>
+        <P><a class="rcb" href="./pk.html">PUNJAB KINGS</a></P>
+        <P><a class="rr" href="./rr.html">RAJASTHAN ROYALS</a></P>
+        <P><a class="srh" href="./srh.html">SUNRISERS HYDERABAD</a></P>
+    </div>
+</div>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn2');
+    const toggleBtnIcon = document.querySelector('.toggle_btn2 i');
+    const dropDownMenu = document.querySelector('.dropdown_menu2');
+    
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
